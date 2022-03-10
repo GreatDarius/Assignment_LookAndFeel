@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <title>Home</title>
+    <title>Top 10 Movies</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     <style>
         #links-items:hover {
@@ -66,55 +66,86 @@
         </div>
     </header>
     <div class="background-image"></div>
-        <div class="content" style="padding-top:50px;">
-            <div class="container">
-                <div class="row" >
-                    <div class="col col-md-12" >
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="padding-top:55px;">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="container-fluid">
-                                        <img class="d-block w-100" src="./img/Batman1.jpg" alt="First slide" >
-                                    </div>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>DC Movies</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="container-fluid">
-                                        <img class="d-block w-100" src="./img/Superman1.jpg" alt="First slide" style="">
-                                    </div>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Marvel Movies</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="container-fluid">
-                                        <img class="d-block w-100" src="./img/Wonderwoman.jpg" alt="First slide" style="">
-                                    </div>
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Other Franchises</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
+    <div class="content" style="padding-top:50px;">
+        <div class="container" style=" padding-top: 50px; ">
+            <div class="row">
+                <div class="col col-md-12">
+                    <table class="table table-striped" style="background-color: white; padding-top: 50px; ">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Movie Name</th>
+                                <th scope="col">Release Year</th>
+                                <th scope="col">IMDB Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>The Shawshank Redemption</td>
+                                <td>(1994)</td>
+                                <td>9.3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>The Godfather</td>
+                                <td>(1972)</td>
+                                <td>9.2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>The Godfather: Part II</td>
+                                <td>(1974)</td>
+                                <td>9.1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>The Dark Knight</td>
+                                <td>(2008)</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>12 Angry Men</td>
+                                <td>(1957)</td>
+                                <td>8.9</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Schindler's List</td>
+                                <td>(1993)</td>
+                                <td>8.8</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>The Lord of the Rings: The Return of the King</td>
+                                <td>(2003)</td>
+                                <td>8.7</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td>Pulp Fiction (1994)</td>
+                                <td>(1994)</td>
+                                <td>8.6</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td>The Good, the Bad and the Ugly</td>
+                                <td>(1966)</td>
+                                <td>8.5</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10</th>
+                                <td>The Lord of the Rings: The Fellowship of the Ring</td>
+                                <td>(2001)</td>
+                                <td>8.4</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
+    </div>
 
 </body>
 </html>
