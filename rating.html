@@ -19,26 +19,9 @@
             position: relative;
         }
 
-            .content::before {
-                content: "";
-                position: fixed;
-                left: 0;
-                right: 0;
-                z-index: -1;
-                display: block;
-                background-image: url('./img/Superman.jpg');
-                background-size: cover;
-                width: 100%;
-                height: 100%;
-                -webkit-filter: blur(5px);
-                -moz-filter: blur(5px);
-                -o-filter: blur(5px);
-                -ms-filter: blur(5px);
-                filter: blur(5px);
-            }
     </style>
 </head>
-<body>
+<body style="background-color:aqua;" onload="message()">
     <header>
         <!-- The Nav Bar Section -->
         <div class="container">
@@ -65,26 +48,25 @@
             </div>
         </div>
     </header>
-    <div class="background-image"></div>
-    <div class="content">
+    <div class="content-fluid">
         <div class="container" style="padding-top:50px;">
-            <div class="row" style="padding-top:50px; background-color:wheat;">
+            <div class="row" style="padding-top:50px;">
                 <div class="col col-md-12">
-
-
-                    <form style="">
-
-
-
-
-
-                        <div class="form-row align-items-center" style="width:900px;">
+                    In this page you can search for your favorit movies and Tv shows and RATE the from 1-10. By rating movies in this website you can make an impact on the top 10 movies/ TV shows represented in the list
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row" style="padding-top:50px;">
+                <div class="col col-md-2 col-sm-2"></div>
+                <div class="col col-md-8 col-sm-8">
+                    <form style="background-color: wheat; padding: 15px; ">
+                        <div class="form-row align-items-center" >
                             <label for="MovieName" class="col-sm-2 col-form-label">Movie Name</label>
-                            <div class="col-auto">
+                            <div class="col-md-8">
                                 <div class="form-row align-items-center">
-
-                                    <div class="col-auto">
-                                        <div class="form-check mb-2">
+                                    <div class="col-md-8">
+                                        <div class="col-md-8">
                                             <input type="email" class="form-control" id="inputEmail3" placeholder="Movie Name">
                                         </div>
                                     </div>
@@ -92,7 +74,6 @@
                                         <button type="submit" class="btn btn-primary mb-2">SEARCH</button>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                         <fieldset class="form-group">
@@ -138,13 +119,34 @@
                             </div>
                         </div>
                     </form>
-
-
                 </div>
+                <div class="col col-md-2 col-sm-2"></div>
             </div>
         </div>
     </div>
-
+    <div class="container">
+        <footer class="light" id="footer">
+            <div class="subfooter">
+                <div class="container">
+                    <div class="col-md-12 ">
+                        <p class="footer2">
+                            <div class="col-md-2 nopad-foot" id="footbottom">
+                                <div class="space-bottom hidden-lg hidden-md"></div>
+                            </div>
+                            <div class="col-md-10 nopad-foot">
+                                <div><a href="index.html" target="index.html">Home</a>  |  <a href="rating.html" target="rating.html">Rating</a>  |  <a href="topmovies.html" target="topmovies.html">Top 10 Movies</a>  |  <a href="topshows.html" target="topshows.html">Top 10 TV shows</a>  |  <a href="aboutus.html" target="aboutus.html">About Us</a></div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function message() {
+            alert("This page is under construction and soon you will be able to rate your favorite movies and TV shows. Thank you for your patience")
+        }
+    </script>
 </body>
 </html>
 

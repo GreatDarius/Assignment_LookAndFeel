@@ -19,31 +19,111 @@
             position: relative;
         }
 
-            .content::before {
-                content: "";
-                position: fixed;
-                left: 0;
-                right: 0;
-                z-index: -1;
-                display: block;
-                background-image: url('./img/Superman.jpg');
-                background-size: cover;
-                width: 100%;
-                height: 100%;
-                -webkit-filter: blur(5px);
-                -moz-filter: blur(5px);
-                -o-filter: blur(5px);
-                -ms-filter: blur(5px);
-                filter: blur(5px);
-            }
 
         .myImg {
             text-align: center;
         }
+        #myImg {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+            #myImg:hover {
+                opacity: 0.7;
+            }
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
+
+        /* Modal Content (image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 100%;
+            max-width: 1250px;
+        }
+
+        /* Caption of Modal Image */
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+
+        /* Add Animation */
+        .modal-content, #caption {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @-webkit-keyframes zoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: #bbb;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px) {
+            .modal-content {
+                width: 100%;
+            }
+        }
     </style>
 
 </head>
-<body>
+<body style="background-color:aqua;">
     <header>
         <!-- The Nav Bar Section -->
         <div class="container">
@@ -70,51 +150,99 @@
             </div>
         </div>
     </header>
-    <div class="background-image"></div>
     <div class="content" style="padding-top:50px;">
         <div class="container">
             <div class="row">
-                <h1 style="background-color: white; font-size: 20px;  padding-top: 20px;">
-                    IMDB Rating app is a web application where users can find the top 10 rated movies and series on a particular day.Also users can search for movies and seris and rate them accordingly.
-                </h1>
+                <h5 style=" padding-top: 20px; text-align: justify; text-justify: inter-word;">
+                    IMDB Rating app is a web application where users can find their favorite movies and TV shows on any channel or site and rate them. Also users can easily see the top 10 movies and top 10 series based on the ratings of other viewers.
+                    <br /> To create this website we used IMDB-API from <a href="https://imdb-api.com/">https://imdb-api.com</a>. In this way we can pull the list of movies and TV shows from this API easily and up to date.
+                </h5>
             </div>
         </div>
-        <div class="container">
+        <div class="container" style="padding-top:50px;">
             <div class="row">
                 <div class="col">
-
-                    <div class="myImg" style="width : 530; height :200 ;padding:unset">
-                        <img src="img\Nikith's Photo.jpg" alt="Moein's Photo'" width="230" height="200">
+                    <div class="myImg" style="width : 530px; height :230px ;padding:unset">
+                        <img src="./img/Moein.jpeg" alt="Moein's Photo'" width="230" height="230">
                     </div>
-                    <h1 style="background-color: white; font-size: 20px;  padding-top: 20px;">
-                        Nikith Kallem worked as a  Functional analyst and Salesforce Application Development Engineer at Accenture for 2.5 years.He is a passionate student, who's currently pursuing Masters in Business Analytics and Information Systems at University of South Florida.Currently I am learning different technologies involved in developing web applications.
+                    <h1 style="font-size: 20px; padding-top: 20px; text-align: justify; text-justify: inter-word;">
+                        Moein Farokhnia is a master's student of Business Analytics and Information Systems at the University of South Florida. He has more than 5 years of experience in Web App development using PHP, Laravel, Mysql, Oracle, Ajax, etc.
+                        He is pursuing an analytic job after graduating from BAIS. He is passionate about Machine Learning, Data Mining, and Cyber Security.
+                        If you want to learn more about me please check my <a href="https://www.linkedin.com/in/moeinfarokhnia/" target="_blank">LinkedIn </a> and <a href="https://github.com/GreatDarius" target="_blank">GitHub</a> 
                     </h1>
-
                 </div>
                 <div class="col">
-
-                    <div class="myImg" style="width : 530; height :200 ;padding:unset">
+                    <div class="myImg" style="width : 530px; height :230px ;padding:unset">
                         <img src="img\Nikith's Photo.jpg" alt="Nikith's Photo" width="230" height="200">
                     </div>
-                    <h1 style="background-color: white; font-size: 20px;  padding-top: 20px;">
+                    <h1 style="font-size: 20px; padding-top: 20px; text-align: justify; text-justify: inter-word;">
                         Nikith Kallem worked as a  Functional analyst and Salesforce Application Development Engineer at Accenture for 2.5 years.He is a passionate student, who's currently pursuing Masters in Business Analytics and Information Systems at University of South Florida.Currently I am learning different technologies involved in developing web applications.
                     </h1>
-
                 </div>
-
             </div>
             <br />
             <br />
             <h4 style="font-size: 20px; color :red"> Logical Data Model </h4>
-            <img src="img\Nikith's Photo.jpg" alt="Image of our Data Model" width="500" height="400">
-            <div class="about_ref">
-                <a href="https://github.com/GreatDarius/Assignment_LookAndFeel">Github Link of our Project</a>
+            <div style="margin-bottom:50px;">
+                Here you can see the ERD Model of our API which provides us with the dataset that we are using:
             </div>
-
+            <div class="row">
+                    <img id="myImg" src="./img/ERD.png" alt="ERD Model" style="">
+            </div>
+            <h4 style="font-size: 20px; color :red; padding-top:50px;"> Using below URL you can access our codes in our GitHub repository: </h4>
+            <div class="row">
+                <div class="col">
+                    <a href="https://github.com/GreatDarius/Assignment_LookAndFeel" target="_blank">GitHub Repository</a>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="container">
+        <footer class="light" id="footer">
+            <div class="subfooter">
+                <div class="container">
+                    <div class="col-md-12 ">
+                        <p class="footer2">
+                            <div class="col-md-2 nopad-foot" id="footbottom">
+                                <div class="space-bottom hidden-lg hidden-md"></div>
+                            </div>
+                            <div class="col-md-10 nopad-foot">
+                                <div><a href="index.html" target="index.html">Home</a>  |  <a href="rating.html" target="rating.html">Rating</a>  |  <a href="topmovies.html" target="topmovies.html">Top 10 Movies</a>  |  <a href="topshows.html" target="topshows.html">Top 10 TV shows</a>  |  <a href="aboutus.html" target="aboutus.html">About Us</a></div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span style="margin-top:100px;" class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
 
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
 
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
 </body>
 </html>
 

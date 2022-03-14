@@ -19,26 +19,9 @@
             position: relative;
         }
 
-            .content::before {
-                content: "";
-                position: fixed;
-                left: 0;
-                right: 0;
-                z-index: -1;
-                display: block;
-                background-image: url('./img/Superman.jpg');
-                background-size: cover;
-                width: 100%;
-                height: 100%;
-                -webkit-filter: blur(5px);
-                -moz-filter: blur(5px);
-                -o-filter: blur(5px);
-                -ms-filter: blur(5px);
-                filter: blur(5px);
-            }
     </style>
 </head>
-<body>
+<body style="background-color:aqua;">
     <header>
         <!-- The Nav Bar Section -->
         <div class="container">
@@ -65,9 +48,18 @@
             </div>
         </div>
     </header>
-    <div class="background-image"></div>
-    <div class="content" style="padding-top:50px;">
-        <div class="container" style=" padding-top: 50px; background-color:wheat;">
+    <div class="content" style="">
+        <div class="container" style="padding-top:50px;">
+            <div class="row" style="padding-top:50px;">
+                <div class="col col-md-12" style="text-align: justify; text-justify: inter-word; ">
+                    In this page you can see top 10 TV shows based on the rating of viewers.<br />
+                    The Top Rated TV Shows list only includes TV series and TV mini series.
+                    The list is ranked by a formula which includes the number of ratings each show received from users, and value of ratings received from regular users.
+                    To be included on the list, a series or mini series must receive ratings from at least 10000 users, and a TV series must also have aired at least 5 episodes.
+                </div>
+            </div>
+        </div>
+        <div class="container" style=" padding-top: 50px;">
             <div class="row">
                 <div class="col col-md-12">
                     <table class="table table-striped" style="background-color: white; padding-top: 50px; ">
@@ -149,7 +141,24 @@
             </div>
         </div>
     </div>
-
+    <div class="container">
+        <footer class="light" id="footer">
+            <div class="subfooter">
+                <div class="container">
+                    <div class="col-md-12 ">
+                        <p class="footer2">
+                            <div class="col-md-2 nopad-foot" id="footbottom">
+                                <div class="space-bottom hidden-lg hidden-md"></div>
+                            </div>
+                            <div class="col-md-10 nopad-foot">
+                                <div><a href="index.html" target="index.html">Home</a>  |  <a href="rating.html" target="rating.html">Rating</a>  |  <a href="topmovies.html" target="topmovies.html">Top 10 Movies</a>  |  <a href="topshows.html" target="topshows.html">Top 10 TV shows</a>  |  <a href="aboutus.html" target="aboutus.html">About Us</a></div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
 
